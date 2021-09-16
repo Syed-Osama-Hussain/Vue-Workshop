@@ -1,9 +1,18 @@
 <template>
   <div>
-    <h1>Featured Products</h1>
-    <div v-for="product in featuredProducts" :key="product.id">
-      <ProductDetail :product="product" />
-    </div>
+    <h3>Featured Products</h3>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col
+          cols="4"
+          md="4"
+          v-for="product in featuredProducts"
+          :key="product.id"
+        >
+          <ProductDetail :product="product" />
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -27,3 +36,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h3 {
+  font-size: 18.72px;
+  text-align: center;
+}
+</style>

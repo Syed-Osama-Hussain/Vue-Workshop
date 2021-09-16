@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <div v-for="product in products" :key="product.id">
-      <ProductDetail :product="product" />
-    </div>
-  </div>
+  <b-container class="bv-example-row">
+    <b-row>
+      <b-col cols="4" md="4" v-for="product in products" :key="product.id">
+        <ProductDetail :product="product" />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

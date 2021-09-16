@@ -1,17 +1,21 @@
 <template>
-  <div class="product-display">
-    <div class="product-container">
-      <div class="product-image">
-        <img v-bind:src="image" />
-      </div>
-      <div class="product-info">
-        <h1>{{ product.name }}</h1>
-        <ul>
-          <li>{{ product.category }}</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <b-card
+    :title="product.name"
+    :img-src="image"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem"
+    class="mb-2"
+  >
+    <b-card-text class="category-text">
+      Category: {{ product.category }}
+    </b-card-text>
+
+    <b-button class="view-btn" size="sm" href="#" variant="primary"
+      >View More</b-button
+    >
+  </b-card>
 </template>
 
 <script>
@@ -33,43 +37,34 @@ export default {
 };
 </script>
 
-<style>
-h1 {
-  font-size: 50px;
-}
-
+<style scoped>
 img {
-  border: 2px solid #d8d8d8;
-  width: 70%;
-  margin: 40px;
-  padding: 15px;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+  height: 80px;
 }
 
-li {
-  font-size: 18px;
+p {
+  font-size: 12px;
 }
 
-.product-display {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+h4 {
+  font-size: 16px;
 }
 
-.product-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.view-btn {
+  width: 47.5px;
+  height: 17px;
+  font-size: 6px;
 }
 
-.product-image,
-.product-info {
-  width: 50%;
+.card-body {
+  padding: 12px;
 }
 
-ul {
-  list-style-type: none;
+.card-title {
+  margin-bottom: 0.1rem;
+}
+
+.category-text {
+  margin-bottom: 0px;
 }
 </style>
