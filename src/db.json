@@ -1,14 +1,14 @@
 {
     "products": [
-        {"id": 1, "name": "Poco", "category": "phones", "featured": true},
-        {"id": 2, "name": "Iphone 13", "category": "phones", "featured": true},
-        {"id": 3, "name": "Dell", "category": "laptops", "featured": true},
-        {"id": 4, "name": "Fitbit", "category": "watches", "featured": true},
-        {"id": 5, "name": "Xiaomi Note 10", "category": "phones"},
-        {"id": 6, "name": "Iphone X", "category": "phones"},
-        {"id": 7, "name": "Hp", "category": "laptops"},
-        {"id": 8, "name": "Motorolla Xz", "category": "watches"},
-        {"id": 9, "name": "Macbook", "category": "laptops"},
-        {"id": 10, "name": "Samsung A3", "category": "phones"}
+        {"id": 1, "name": "Poco", "category": "phones", "featured": true, "price": 100, "description": "This is xyz description"},
+        {"id": 2, "name": "Iphone 13", "category": "phones", "featured": true, "price": 200, "description": "This is xyz description"},
+        {"id": 3, "name": "Dell", "category": "laptops", "featured": true, "price": 300, "description": "This is xyz description"},
+        {"id": 4, "name": "Fitbit", "category": "watches", "featured": true, "price": 400, "description": "This is xyz description"},
+        {"id": 5, "name": "Xiaomi Note 10", "category": "phones", "price": 500, "description": "This is xyz description"},
+        {"id": 6, "name": "Iphone X", "category": "phones", "price": 600, "description": "This is xyz description"},
+        {"id": 7, "name": "Hp", "category": "laptops", "price": 700, "description": "This is xyz description"},
+        {"id": 8, "name": "Motorolla Xz", "category": "watches", "price": 800, "description": "This is xyz description"},
+        {"id": 9, "name": "Macbook", "category": "laptops", "price": 100, "description": "This is xyz description"},
+        {"id": 10, "name": "Samsung A3", "category": "phones", "price": 900, "description": "This is xyz description"}
     ]
 }

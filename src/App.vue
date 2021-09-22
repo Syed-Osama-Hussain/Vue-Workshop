@@ -14,6 +14,7 @@
             <b-nav-item
               ><router-link to="/watches">Watches</router-link></b-nav-item
             >
+            <b-nav-item><router-link to="/cart">Cart</router-link></b-nav-item>
           </b-navbar-nav>
         </b-navbar>
       </div>

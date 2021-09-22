@@ -11,15 +11,13 @@
     <b-card-text class="category-text">
       Category: {{ product.category }}
     </b-card-text>
+    <b-card-text class="category-text">
+      Price: ${{ product.price }}
+    </b-card-text>
+    <b-card-text class="category-text">
+      Description: {{ product.description }}
+    </b-card-text>
 
-    <b-button
-      @click="$router.push({ name: 'Product', params: { id: product.id } })"
-      class="view-btn"
-      size="sm"
-      href="#"
-      variant="primary"
-      >View More</b-button
-    >
     <b-button
       v-if="isItemInCart(product.id)"
       @click="removeFromCart"
@@ -43,19 +41,18 @@
 
 <script>
 import device from "@/assets/images/mobile.jpg";
+import { getProductById } from "@/services/productService";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
-  name: "ProductDetail",
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
+  name: "Product",
+  created() {
+    this.product = getProductById(this.$route.params.id);
   },
   data() {
     return {
       image: device,
+      product: {},
     };
   },
   methods: {
