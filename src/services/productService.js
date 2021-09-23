@@ -5,7 +5,7 @@ export function getProductsbyCategory(category) {
 }
 
 export function getProductById(id) {
-  return data?.products?.find((product) => product.id === id);
+  return data?.products?.find((product) => product.id == id);
 }
 
 export function getFeaturedProducts() {
